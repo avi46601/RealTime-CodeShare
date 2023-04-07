@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+.homePageWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: aliceblue;
+  height: 100vh;
+}
+.formWrapper{
+  background: #2C3639;
+  padding: 20px;
+  border-radius: 10px;
+  height: 250px;
+  width: 370px;
+  max-width: 90%;
+}
+.image{
+  width: 400px;
+}
+.imagediv{
+   display: flex;
+   width: 500px;
+  
+}
+.logo{
+  height: 75px;
+  width: 150px;
+  
+}
+.mainLable
+{
+margin-bottom: 20px;
+margin-top: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputGroup{
   display: flex;
   flex-direction: column;
+}
+.inputBox
+{
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  height: 15px;
+  margin-bottom: 20px;
+  background: #eee;
+  font-size: 15px;
+  font-weight: bold;
+}
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight:bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.joinbtn 
+{
+  background:  #30D325;
+  width: 100px;
+  margin-left: auto;
+}
+.joinbtn:hover ,.leavebtn:hover{
+  background:#E96479;
+}
+.createInput
+{
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 0%;
+}
+.createNewBtn
+{
+  color:  #30D325;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.createNewBtn:hover ,footer a:hover{
+  color: #E96479;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+}
+footer a{
+  color:  #30D325;
+  text-decoration: none;
+}
+
+ /* Editor page CSS */
+.logoImage
+{
+  height: 60px;
+  width: 120px;
+}
+.mainwrap
+{
+     display: grid;
+     grid-template-columns: 230px 1fr;
+     
+}
+.aside
+{
+  background: #222831;
+  padding:30px 10px;
+  color: #30D325;
+  display: flex;
+  flex-direction: column;
+}
+.sideInner
+{
+  flex: 1;
+}
+.clientList
+{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.clientClass
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+.copybtn
+{
+  margin-top: 20px;
+  width: 100%;
+}
+.leavebtn
+{
+  margin-top: 10px;
+  width: 100%;
+  background:  #30D325;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Editor */
+.CodeMirror
+ {
+   min-height:100vh;
+   font-size: 20px;
+   line-height: 1.6;
+   padding-top: 20px;
 }
